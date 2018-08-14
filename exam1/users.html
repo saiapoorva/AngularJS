@@ -1,0 +1,28 @@
+<form>
+
+        Username    <input type = "text"  ng-model = "uname" required/><br>
+        <br>
+        Password   <input type = "text"  ng-model = "pwd" required/><br>
+        <br>
+        email   <input type = "email"  ng-model = "email" required/><br>
+        <br>
+        <br>
+        UserType   <select ng-model = "option1" >
+                <option value="admin" >Admin</option>
+                <option value="manager" >Manager</option>
+                <option value="consultant" >Consultant</option>
+                
+              </select><br>
+
+        Gender:
+       
+        <input type="radio" name="gender" ng-model = "gender1" value="male"> Male
+        
+        <input type="radio" name="gender" ng-model = "gender1" value="female"> Female<br>
+        <br>
+        
+        
+        <input type = "button" value = "submit" ng-click = "submit()"/><br>
+        <br>
+        
+        </form>

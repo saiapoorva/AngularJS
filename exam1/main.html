@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <title>ANGULAR JS APPLICATION</title>
+    <script src="https://code.angularjs.org/1.5.5/angular.min.js"></script>
+    <script src="https://code.angularjs.org/1.5.5/angular-route.min.js"></script>
+    <script src="app1.js"> </script>
+</head>
+
+<body>
+    <div ng-app="myapp">
+       <div>
+            
+            <a href="#/login" ng-if = "$root.isLoggedin == 'false' ">Login</a> |
+            <a href="#/home" ng-if = "$root.isLoggedin == 'true'" />Home</a> | 
+            <a href="#/users" ng-if = "$root.isLoggedin == 'true'" />users</a> |
+            <a href="#/userslist" ng-if = "$root.isLoggedin == 'true'" />userslist</a>|
+            <a href="#/logout" ng-if = "$root.isLoggedin == 'true'"/>logout</a>
+            </nav>
+        </div>
+        <div ng-view=""></div>
+    </div>
+    </div>
+
+</body>
+
+</html>
